@@ -4,8 +4,10 @@
     {
         static int countHeads;
         static int countTails;
+        static string name;
         static void Main(string[] args)
         {
+            getName();
             CoinToss();
             Message();
         }
@@ -41,6 +43,12 @@
             {
                 Console.WriteLine("You lost");
             }
+        static void getName()
+        {
+            Console.WriteLine("Who are you?");
+            Console.Write("> ");
+            name = Console.ReadLine();
+            Console.WriteLine("Hello, " + name + "!");
         }
     }
 }
