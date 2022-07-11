@@ -7,6 +7,7 @@
         static void Main(string[] args)
         {
             CoinToss();
+            Message();
         }
         static void CoinToss()
         {
@@ -29,6 +30,17 @@
                 }
             }
             Console.WriteLine("Heads: " + countHeads + ", Tails: " + countTails);
+        }
+        static void Message()
+        {
+            if (countHeads > countTails)
+            {
+                Console.WriteLine("You won!");
+            }
+            else
+            {
+                Console.WriteLine("You lost");
+            }
         }
     }
 }
