@@ -37,12 +37,13 @@
         {
             if (countHeads > countTails)
             {
-                Console.WriteLine("You won!");
+                Console.WriteLine(name + " won!");
             }
             else
             {
-                Console.WriteLine("You lost");
+                Console.WriteLine(name + " lost");
             }
+        }
         static void getName()
         {
             Console.WriteLine("Who are you?");
